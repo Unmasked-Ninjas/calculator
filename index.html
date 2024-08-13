@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+    
+</head>
+<body class="flex justify-center align-center">
+    <div class="calculate bg-gray-200 p-10 w-[780px] rounded-full">
+        <input readonly id="display" class="w-[350px] py-4 mx-[165px] border-double border-black bg-transparent text-3xl rounded-lg bg-white">
+        <button class="button bg-gray-700 text-white text-center py-5 rounded-full cursor-pointer float-end mx-[120px] my-[-65px]" onclick="removelast()">⌫</button>
+        <div id="keys" class="grid grid-rows-5 grid-cols-4 rounded-lg w-[380px] p-4 mx-[155px] ">
+            <button class="button bg-gray-700 text-white text-center py-4 rounded-full cursor-pointer " onclick="adddisplay('7')">7</button>
+            <button class="button bg-gray-700 text-white text-center py-4 rounded-full cursor-pointer" onclick="adddisplay('8')">8</button>
+            <button class="button bg-gray-700 text-white text-center py-4 rounded-full cursor-pointer" onclick="adddisplay('9')">9</button>
+            <button class="button bg-blue-400 text-white text-center py-4 rounded-full cursor-pointer" onclick="adddisplay('/')">/</button>
+
+            <button class="button bg-gray-700 text-white text-center py-4 rounded-full cursor-pointer" onclick="adddisplay('4')">4</button>
+            <button class="button bg-gray-700 text-white text-center py-4 rounded-full cursor-pointer" onclick="adddisplay('5')">5</button>
+            <button class="button bg-gray-700 text-white text-center py-4 rounded-full cursor-pointer" onclick="adddisplay('6')">6</button>
+            <button class="button bg-blue-400 text-white text-center py-4 rounded-full cursor-pointer" onclick="adddisplay('*')">*</button>
+
+            <button class="button bg-gray-700 text-white text-center py-4 rounded-full cursor-pointer" onclick="adddisplay('1')">1</button>
+            <button class="button bg-gray-700 text-white text-center py-4 rounded-full cursor-pointer" onclick="adddisplay('2')">2</button>
+            <button class="button bg-gray-700 text-white text-center py-4 rounded-full cursor-pointer" onclick="adddisplay('3')">3</button>
+            <button class="button bg-blue-400 text-white text-center py-4 rounded-full cursor-pointer" onclick="adddisplay('-')">-</button>
+
+            <button class="button bg-gray-700 text-white text-center py-4 rounded-full cursor-pointer" onclick="adddisplay('0')">0</button>
+            <button class="button bg-gray-700 text-white text-center py-4 rounded-full cursor-pointer" onclick="adddisplay('.')">.</button>
+            <button class="button bg-gray-700 text-white text-center py-4 rounded-full cursor-pointer" onclick="cleardisplay(' ')">C</button>
+            <button class="button bg-blue-400 text-white text-center py-4 rounded-full cursor-pointer" onclick="adddisplay('+')">+</button>
+
+            <button class="calc bg-green-400 text-center text-white py-4 rounded-full w-[350px] cursor-pointer" onclick="calculate()">=</button>
+        </div>
+
+    </div>
+
+    <script src="sandbox.js"></script>
+</body>
+</html>
